@@ -219,13 +219,54 @@ def rps():
 # Add all function implementations below this line.
 # We have started is_move_good() for you.
 # ***********************************************************************
-
+choices = ["r", "p", "s"]
 def is_move_good(move):
-    """TO FILL IN: describe what this function does in one line."""
-    # TODO: implement
-
-    # NOTE: replace this return statement!!!
+    """ Checks whether the move is rock, paper, or scissors. """
+    return move.lower() in choices
     return True
+PLAYER_1 = 1
+PLAYER_2 = 2
+DRAW = 0
+
+PLAY_RPS = Marcus
+PLAY_RPSLS = Kyla
+
+MAX_ROUNDS = 3
+COURSE_NAME = "CS 104"
+
+ERROR_NAME = 1
+ERROR_MOVE = 2
+
+DEFAULT_MOVE = "R"
+
+def get_name(player_number):
+ if player_number == PLAYER_1
+   prompt = "Player 1, enter your name: "
+      default_name = "Marcus
+else: 
+ prompt = "Player 2, enter your name: "
+default_name = "Kyla"
+
+name = input(prompt)
+if name== "":
+    print error_mesage(ERROR_NMAE)
+    return default_name
+
+def get_menu_choice():
+    while True:
+        print("1. Play Rock, Paper, Scissors")
+        print("2. Play Rock, Paper, Scissors, Lizard, Spock")
+        print("3. Quit")
+
+        choice = input("Choice --> ")
+
+        if choice in ("1", "2", "3"):
+            return int(choice)
+
+        print("Invalid menu choice")
+        
+def is_move_good(move):
+    return move in ("R", "r", "P", "p", "S", "s")
 
 
 # ***********************************************************************
